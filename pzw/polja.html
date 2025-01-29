@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS polja</title>
+    <script src="polja.js"></script>
+  </head>
+  <body>
+    <h1>JavaScript polja</h1>
+    <p id="demo"></p>
+    <script>
+      let auti = new Array("Porche", "BMW", "Audi", "Katarina je jako pametna");
+
+      document.write(auti[0] + "<br/>");
+      document.write(auti[1] + "<br/>");
+      document.write(auti[2] + "<br/>");
+      document.write(auti[3] + "<br/>");
+
+      const fruits = ["Banana", "Orange", "Apple", "Mango"];
+      document.write(fruits.length + "<br/>");
+
+      document.write(fruits.join(" + ") + "<br/>");
+
+      document.write("<br/>");
+      document.write("Sortiranje" + "<br/>" + "<br/>");
+
+      const food = ["lubenica", "trešnja", "pizza", "piletina", "ananas"];
+      food.sort();
+      document.write(food);
+
+      food.reverse();
+      document.write("<br/>" + food);
+
+      const numbers = [3, 14, 17, 25, 8];
+      let txt = "";
+      numbers.forEach(myFunction);
+      document.getElementById("demo").innerHTML = txt;
+
+      function myFunction(value, index, array){
+        txt += value + "<br>";
+      }
+    </script>
+  </body>
+</html>

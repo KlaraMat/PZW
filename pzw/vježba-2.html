@@ -14,9 +14,10 @@
     <button id="button_B">SMANJIVANJE</button>
     <script>
     const buttonA = document.querySelector("#button_A")
+    const buttonB = document.querySelector("#button_B")
     const headingA = document.querySelector("#heading_A")
 
-    let count = 1
+    let count = 0
 
     buttonA.onclick = () => {
         headingA.textContent = ` Broj klikova: ${count}`;

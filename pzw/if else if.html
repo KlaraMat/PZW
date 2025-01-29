@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="demo">Pokušaj pogoditi broj</h1>
+
+    <script>
+      const broj = 17;
+      const pogodiBroj = prompt("Pogodi broj:");
+      const pogodenBroj = Number(pogodiBroj);
+      let poruka;
+
+      if (pogodenBroj !== broj) {
+        poruka = "To nije taj broj";
+      } else if (pogodenBroj > broj) {
+        poruka = "Prevelik broj, probaj manji";
+      } else if (pogodenBroj < broj) {
+        poruka = "Premali broj, probaj veći";
+      } else {
+        poruka = "To je taj broj!";
+      }
+
+      document.getElementById("demo").innerHTML = poruka;
+    </script>
+  </body>
+</html>
+

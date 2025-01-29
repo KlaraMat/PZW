@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dani u tjednu</title>
+  </head>
+  <body>
+    <h1>Danas je:</h1>
+    <p id="dan"></p>
+
+    <script>
+      const danas = new Date().getDay();
+      let dan;
+
+      switch (danas) {
+        case 0:
+          dan = "Nedjelja";
+          break;
+        case 1:
+          dan = "Ponedjeljak";
+          break;
+        case 2:
+          dan = "Utorak";
+          break;
+        case 3:
+          dan = "Srijeda";
+          break;
+        case 4:
+          dan = "Četvrtak";
+          break;
+        case 5:
+          dan = "Petak";
+          break;
+        case 6:
+          dan = "Subota";
+          break;
+      }
+
+      document.getElementById("dan").innerHTML = dan;
+    </script>
+  </body>
+</html>

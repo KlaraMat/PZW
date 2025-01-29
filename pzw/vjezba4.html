@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS DOM</title>
+</head>
+<body>
+
+    <h1>JavaScript DOM</h1>
+
+    <h2 id="n1">Naslov 1</h2>
+
+    <h2 id="n2">Naslov 2</h2>
+
+    <h2 id="n3">Naslov 3</h2>
+    
+
+    <button onclick="getElementById(`like`).src=`slike/heart-on.png`">Like</button>
+
+    <img src="slike/heart.png" alt="" id="like" width="200px">
+
+    <button onclick="getElementById(`like`).src=`slike/heart.png`">Unlike</button>
+
+
+    <script>
+
+    document.getElementById("n1").style.color = "red";
+    document.getElementById("n1").style.fontSize = "25px";
+
+    document.getElementById("n2").style.color = "green";
+    document.getElementById("n2").style.fontSize = "35px";
+
+    document.getElementById("n3").style.color = "blue";
+    document.getElementById("n3").style.fontSize = "45px";
+
+    </script>
+    
+</body>
+</html>
